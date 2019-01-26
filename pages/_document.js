@@ -1,8 +1,12 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
+import fetch from 'isomorphic-unfetch';
 
 class MyDocument extends Document {
   render() {
+    const { shops } = this.props;
+    console.log('render', shops);
+
     return (
       <html lang="en">
         <Head>
@@ -75,12 +79,13 @@ class MyDocument extends Document {
   }
 }
 
-MyDocument.getInitialProps = ({ renderPage }) => {
-  const page = renderPage(Component => props => (
-    <Component {...props} />
-  ));
+MyDocument.getInitialProps = async () => {
+  const res = await fetch('http://localhost:3000/api/shops');
+  const shops = await res.json();
 
-  return { ...page };
+  console.log(`Show data fetched. Count: ${shops.length}`);
+
+  return { shops };
 };
 
 export default MyDocument;

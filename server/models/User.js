@@ -89,4 +89,3 @@ mongoSchema.loadClass(UserClass);
 const User = mongoose.model('User', mongoSchema);
 
 module.exports = User;
-

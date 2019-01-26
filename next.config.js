@@ -3,7 +3,10 @@ const webpack = require('webpack');
 
 module.exports = withCSS({
   webpack: (config) => {
-    const env = { API_KEY: JSON.stringify(process.env.SHOPIFY_API_KEY) };
+    const env = {
+      SHOPIFY_API_KEY: JSON.stringify(process.env.SHOPIFY_API_KEY),
+      API_URL: JSON.stringify(process.env.API_URL),
+    };
 
     config.plugins.push(new webpack.DefinePlugin(env));
     return config;

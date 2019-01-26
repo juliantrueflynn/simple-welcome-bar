@@ -80,10 +80,9 @@ class MyDocument extends Document {
 }
 
 MyDocument.getInitialProps = async () => {
-  const res = await fetch('http://localhost:3000/api/shops');
+  // eslint-disable-next-line no-undef
+  const res = await fetch(`${API_URL}/api/shops`);
   const shops = await res.json();
-
-  console.log(`Show data fetched. Count: ${shops.length}`);
 
   return { shops };
 };

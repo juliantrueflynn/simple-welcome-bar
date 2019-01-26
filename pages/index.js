@@ -26,10 +26,8 @@ class Index extends React.Component {
         </Head>
         <Layout>
           <Card>
-            <p> Dashboard </p>
-            <p>
-              Polaris sample working!
-            </p>
+            <p>Dashboard</p>
+            <p>Polaris sample working!</p>
           </Card>
         </Layout>
       </div>

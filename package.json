@@ -14,12 +14,11 @@
     "@shopify/polaris": "^3.5.0",
     "@zeit/next-css": "^1.0.1",
     "dotenv": "^6.1.0",
-    "express": "^4.16.4",
-    "express-session": "^1.15.6",
+    "es6-promise": "^4.2.5",
     "isomorphic-fetch": "^2.2.1",
-    "isomorphic-unfetch": "^3.0.0",
     "knex": "^0.16.3",
     "koa": "^2.6.2",
+    "koa-router": "^7.4.0",
     "koa-session": "^5.10.1",
     "lodash": "^4.17.11",
     "next": "^7.0.2",
@@ -29,7 +28,6 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "shopify-node-api": "^1.10.0",
     "webpack": "^4.29.0"
   },
   "devDependencies": {

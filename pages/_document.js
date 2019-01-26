@@ -1,12 +1,9 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
-import fetch from 'isomorphic-unfetch';
+import fetch from 'isomorphic-fetch';
 
 class MyDocument extends Document {
   render() {
-    const { shops } = this.props;
-    console.log('render', shops);
-
     return (
       <html lang="en">
         <Head>

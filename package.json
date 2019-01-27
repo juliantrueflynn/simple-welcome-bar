@@ -7,7 +7,8 @@
     "start": "node server/app.js",
     "dev": "nodemon server/app.js --watch server",
     "now": "now && now alias && now rm builderbook-boilerplate --safe --yes",
-    "lint": "eslint components pages lib server"
+    "lint": "eslint components pages lib server",
+    "test": "mocha"
   },
   "dependencies": {
     "@shopify/koa-shopify-auth": "^3.1.13",

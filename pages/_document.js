@@ -58,18 +58,10 @@ class MyDocument extends Document {
             `}
           </style>
         </Head>
-        <body
-          style={{
-            font: '16px Muli',
-            color: '#222',
-            margin: '0px auto',
-            fontWeight: '300',
-            lineHeight: '1.5em',
-            backgroundColor: '#F7F9FC',
-          }}
-        >
+        <body>
           <Main />
           <NextScript />
+          {this.props.shops && this.props.shops.map((shop) => JSON.stringify(shop))}
         </body>
       </html>
     );
@@ -79,9 +71,9 @@ class MyDocument extends Document {
 MyDocument.getInitialProps = async () => {
   // eslint-disable-next-line no-undef
   const res = await fetch(`${API_URL}/api/shops`);
-  const shops = await res.json();
+  const json = await res.json();
 
-  return { shops };
+  return { shops: json.data };
 };
 
 export default MyDocument;

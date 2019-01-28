@@ -3,7 +3,6 @@ const Next = require('next');
 const bodyParser = require('koa-bodyparser');
 const session = require('koa-session');
 const Router = require('koa-router');
-const shops = require('./controllers/shops');
 
 require('dotenv').config();
 
@@ -29,7 +28,6 @@ app.prepare().then(() => {
 
   router.use(session(server));
   router.use(bodyParser);
-  server.use(shops.routes());
   server.use(router.routes());
 
   server.listen(port, (err) => {

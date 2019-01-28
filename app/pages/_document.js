@@ -1,6 +1,6 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
-import fetch from 'isomorphic-fetch';
+// import fetch from 'isomorphic-fetch';
 
 class MyDocument extends Document {
   render() {
@@ -61,7 +61,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          {this.props.shops && this.props.shops.map((shop) => JSON.stringify(shop))}
+          {/* {this.props.shops && this.props.shops.map((shop) => JSON.stringify(shop))} */}
         </body>
       </html>
     );
@@ -70,10 +70,10 @@ class MyDocument extends Document {
 
 MyDocument.getInitialProps = async () => {
   // eslint-disable-next-line no-undef
-  const res = await fetch(`${API_URL}/api/shops`);
-  const json = await res.json();
+  // const res = await fetch(`${API_URL}/api/shops`);
+  // const json = await res.json();
 
-  return { shops: json.data };
+  return { shops: [] };
 };
 
 export default MyDocument;

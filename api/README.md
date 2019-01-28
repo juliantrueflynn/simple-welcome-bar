@@ -1,4 +1,4 @@
-## Simple Welcome Bar
+## Simple Welcome Bar - API
 Shopify app with React, Redux, Next, Koa, PostgreSQL.
 
 ## Contents

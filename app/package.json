@@ -26,7 +26,6 @@
     "next": "^7.0.2",
     "nprogress": "^0.2.0",
     "passport": "^0.4.0",
-    "pg": "^7.8.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -34,8 +33,6 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "chai": "^4.2.0",
-    "chai-http": "^4.2.1",
     "eslint": "^5.7.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",

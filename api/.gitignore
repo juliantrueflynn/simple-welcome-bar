@@ -1,0 +1,11 @@
+*~
+*.swp
+tmp/
+npm-debug.log
+.DS_Store
+
+
+.build/*
+node_modules/
+.coverage
+.env

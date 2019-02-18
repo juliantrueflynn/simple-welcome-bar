@@ -1,4 +1,7 @@
 ## Simple Welcome Bar
+
+Note: This was practice for using Next.js and Koa server for API. It is now archived because I moved onto using Rails for the API. View the new repo [here](https://github.com/juliantrueflynn/conditional_welcome_bar).
+
 Shopify app with React, Redux, Next, Koa, PostgreSQL.
 
 ## Contents
